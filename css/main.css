@@ -1,9 +1,19 @@
 @import url(_reset.css);
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@600;700&display=swap');
 
+:root {
+    --preto: #000000;
+    --branco: #FFFFFF;
+    --rosa-choque: #c518e8;
+    --cor-hover: #363a3b;
+
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
+
 .body {
     color: #FFFFFF;
-
     min-height: 100vh;
 
     background: rgb(0, 0, 0);
@@ -14,20 +24,25 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-
-    padding: 2rem;
 }
 
-@media screen and (min-width: 1440px) {
-    .body {
-        padding: 2rem calc((100vw - 1086px)/2);
-    }
-}
 
 .main {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.cabecalho__menu {
+    padding: 34px;
+    color: var(--rosa-choque);
+    background-color: var(--preto);
+    font-family: 'Inter', sans-serif;
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: 400;
+    display: flex;
+    gap: 53px;
 }
 
 .logo-game-store {
@@ -59,7 +74,7 @@
 }
 
 .page-title__emphasis {
-    color: #c518e8;
+    color: var(--rosa-choque);
 }
 
 .dashboard {
@@ -129,15 +144,26 @@
 
     border-radius: 1rem;
 
-    background-color: #c518e8;
+    background-color: var(--rosa-choque);
 }
 
 .dashboard__item__button--return {
-    background-color: #01080E;
+    background-color: var(--preto);
 }
 
 .hachuras {
     margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
     margin-right: 33px;
     align-self: flex-end;
+}
+
+.rodape {
+    padding: 34px;
+    color: var(--rosa-choque);
+    background-color: var(--preto);
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
 }
